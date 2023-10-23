@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fetch API Example</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fetch.html">Fetch</a></li>
+            <li><a href="menu.html">Contacts</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="clock"><a>
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </a> </li>
+            <script>
+                let hrs = document.getElementById("hrs");
+                let min = document.getElementById("min");
+                let sec = document.getElementById("sec");
+                setInterval(() => {
+                    let currentTime = new Date();
+
+                    hrs.innerHTML = currentTime.getHours();
+                    min.innerHTML = currentTime.getMinutes();
+                    sec.innerHTML = currentTime.getSeconds();
+
+                }, 1000)
+            </script>
+
+
+    </nav>
+    <h1>Fetch API Example</h1>
+    <div id="result">There is no data yet</div>
+    <button onclick="fetchData()">Fetch Data</button>
+
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

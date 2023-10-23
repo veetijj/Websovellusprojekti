@@ -1,6 +1,6 @@
 async function fetchData () {
     try {
-      let response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+      let response = await fetch('https://jsonplaceholder.typicode.com/posts/5/')
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText)
       }
