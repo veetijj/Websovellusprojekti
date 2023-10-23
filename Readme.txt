@@ -1,4 +1,4 @@
-# Websovellusprojekti - Veeti OVaska
+# Websovellusprojekti - Veeti Ovaska
 
 Arviointi kriteerit:
 
